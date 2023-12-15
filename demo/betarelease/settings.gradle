@@ -12,19 +12,5 @@ plugins {
     id 'org.gradle.toolchains.foojay-resolver-convention' version '0.4.0'
 }
 
-rootProject.name = 'demo'
-include(
-    'app', 
-    'list', 
-    'utilities',
-
-    "services:ledger:credit:balance",
-    "services:ledger:credit:incoming:api",
-    "services:ledger:credit:incoming:service:domain",
-    "services:ledger:credit:outgoing:api",
-    "services:ledger:credit:outgoing:service:domain",
-    "services:payment:rta:service:transaction:lib",
-    "services:payment:rta:service:utility",
-    "services:schemes:apis",
-
-    )
+rootProject.name = 'betarelease'
+include('lib')

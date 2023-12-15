@@ -15,3 +15,16 @@ application {
     // Define the main class for the application.
     mainClass = 'demo.app.App'
 }
+
+
+ task endor_test_print_plugins {
+
+        doLast {
+
+            project.plugins.forEach{
+                t-> println "$t"
+            }
+
+        }
+
+    }
